@@ -1,0 +1,66 @@
+.first {
+    height:200px ;
+    margin-bottom: 20px;
+}
+.parent , .child {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.parent {
+    width: 400px;
+    height: 150px;
+    background-color: #f2f2f4;
+    margin-top: 50px;
+    transition: margin-top 0.5s ease-in;
+    -webkit-transition: margin-top 0.5s ease-in;
+    -moz-transition: margin-top 0.5s ease-in;
+    -ms-transition: margin-top 0.5s ease-in;
+    -o-transition: margin-top 0.5s ease-in;
+}
+.child {
+    width: 350px;
+    height: 45px;
+    background-color: #dededc;
+    margin-top: 1px;
+    transition: margin-top 0.5s 0.5s ease-in;
+    -webkit-transition: margin-top 0.5s 0.5s ease-in;
+    -moz-transition: margin-top 0.5s 0.5s ease-in;
+    -ms-transition: margin-top 0.5s 0.5s ease-in;
+    -o-transition: margin-top 0.5s 0.5s ease-in;
+}
+.parent:hover {
+    margin-top:20px ;  
+}
+.parent:hover .child{
+    margin-top: 40px;
+}
+.second {
+    background-color: #eee !important;
+    border: none !important;
+    text-align: center;
+    font-size: 0px !important;
+    color: black !important;
+    font-weight: bold;
+}
+.second::after {
+    content: 'Elzero';
+    font-size: 25px;
+}
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+.third div{
+    width: 400px;
+    height: 30px;
+    padding: var(--mainPadding,10px);
+    margin: 10px;
+    border: 3px solid var(--mainColor,black);
+    line-height: 30px;
+    color: var(--mainColor,red);
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 10px;
+}
